@@ -1,0 +1,20 @@
+{
+  "sauceOptions": {
+    "Build": "browserstack-build-1"
+  },
+
+  "browserOptions": {
+    "Chrome": {
+      "platformName": "Windows 11",
+      "browserVersion": "latest"
+    },
+    "Firefox": {
+      "platformName": "Windows 10",
+      "browserVersion": "latest"
+    },
+    "Edge": {
+      "platformName": "Windows 11",
+      "browserVersion": "latest"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel" thread-count="3" parallel="tests">
+    <test name="ParallelChromeTest">
+        <parameter name="config" value="SauceLabParallelTest.json"/>
+        <parameter name="browserOptions" value="Chrome"/>
+        <classes>
+            <class name="SauceLabClasses.GoogleTest"/>
+        </classes>
+    </test>
+    <test name="ParallelFirefoxTest">
+        <parameter name="config" value="SauceLabParallelTest.json"/>
+        <parameter name="browserOptions" value="Firefox"/>
+        <classes>
+            <class name="SauceLabClasses.GoogleTest"/>
+        </classes>
+    </test>
+    <test name="ParallelEdgeTest">
+        <parameter name="config" value="SauceLabParallelTest.json"/>
+        <parameter name="browserOptions" value="Edge"/>
+        <classes>
+            <class name="SauceLabClasses.GoogleTest"/>
+        </classes>
+    </test>
+</suite>

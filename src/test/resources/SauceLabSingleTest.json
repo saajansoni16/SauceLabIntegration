@@ -1,0 +1,12 @@
+{
+  "sauceOptions": {
+    "Build": "browserstack-build-1"
+  },
+
+  "browserOptions": {
+    "Chrome": {
+      "platformName": "Windows 11",
+      "browserVersion": "latest"
+    }
+  }
+}
