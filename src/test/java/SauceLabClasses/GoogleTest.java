@@ -12,8 +12,8 @@ public class GoogleTest extends SauceLabTestNGTest {
     public void searchEpam(){
         driver.findElement(By.name("q")).sendKeys("EPAM");
         driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
-        driver.findElement(By.xpath("//div[@class='Ftghae']/div[2]/h2/span")).isDisplayed();
-        String title = driver.findElement(By.xpath("//div[@class='Ftghae']/div[2]/h2/span")).getText();
+        driver.findElement(By.xpath("//h2[@data-attrid='title']/span")).isDisplayed();
+        String title = driver.findElement(By.xpath("//h2[@data-attrid='title']/span")).getText();
         Assert.assertEquals(title, "EPAM Systems");
     }
 
@@ -21,8 +21,8 @@ public class GoogleTest extends SauceLabTestNGTest {
     public void searchIndore(){
         driver.findElement(By.name("q")).sendKeys("Indore");
         driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
-        driver.findElement(By.xpath("//div[@class='fYOrjf kp-hc']/descendant::h2/span")).isDisplayed();
-        String title = driver.findElement(By.xpath("//div[@class='fYOrjf kp-hc']/descendant::h2/span")).getText();
+        driver.findElement(By.xpath("//div[@data-attrid='title']/span")).isDisplayed();
+        String title = driver.findElement(By.xpath("//div[@data-attrid='title']/span")).getText();
         Assert.assertEquals(title, "Indore");
     }
 
@@ -30,8 +30,8 @@ public class GoogleTest extends SauceLabTestNGTest {
     public void searchPune(){
         driver.findElement(By.name("q")).sendKeys("Pune");
         driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
-        driver.findElement(By.xpath("//div[@class='fYOrjf kp-hc']/descendant::h2/span")).isDisplayed();
-        String title = driver.findElement(By.xpath("//div[@class='fYOrjf kp-hc']/descendant::h2/span")).getText();
-        Assert.assertEquals(title, "Punee");
+        driver.findElement(By.xpath("//div[@data-attrid='title']/span")).isDisplayed();
+        String title = driver.findElement(By.xpath("//div[@data-attrid='title']/span")).getText();
+        Assert.assertEquals(title, "Pune");
     }
 }
